@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Portfolio</title>
+  <style>
+    /* Reset default margin/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    nav {
+      background: #222;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #00aaff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00aaff;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+      background: #f4f4f4;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .hero-text button {
+      padding: 12px 25px;
+      border: none;
+      background: #007BFF;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero-text button:hover {
+      background: #0056b3;
+    }
+    .hero img {
+      width: 350px;
+      border-radius: 10px;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+    }
+    .about img {
+      width: 300px;
+      border-radius: 10px;
+    }
+    .about-text {
+      max-width: 50%;
+    }
+    .about-text h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .about-text p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .about-text button {
+      padding: 12px 25px;
+      border: none;
+      background: #007BFF;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .about-text button:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <display>
+    <div class="logo">Online Portfolio</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </display>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>HALEX JOSEPH </h1>
+      <p>
+        Hi, I am a Professional Developer and ICT Degree holdoner. I have five years
+        experience in CSE Sector as an ICT Lecturer.
+      </p>
+      <button onclick="alert('Thank you for your interest!')">Hire Me</button>
+    </div>
+    <img src="person.png" alt="Profile Image">
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <img src="person.png" alt="About Image">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+       I am software Developer and a better experience in this field
+        consectetur adipisicing elit. Maxime quos mollitia fugit,
+         deleniti est tenetur quae voluptatem ad ut ratione.
+      </p>
+      <button onclick="downloadResume()">Download Resume</button>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Halex joseph | It Secter expert </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function downloadResume() {
+      alert("Resume download started...");
+      window.location.href = "resume.pdf"; // Replace with your actual resume link
+    }
+  </script>
+
+</body>
+</html>
